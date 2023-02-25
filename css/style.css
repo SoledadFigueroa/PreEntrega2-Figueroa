@@ -1,0 +1,365 @@
+/* ------------------------------------------------------------ 
+Fonts setup
+---------------------------------------------------------------*/
+@import url('"https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,900;1,800&display=swap" rel="stylesheet">');
+
+/* ------------------------------------------------------------ 
+Color setup
+---------------------------------------------------------------*/
+:root {
+    --primary: #3155e7;
+    --primary-dark: #2045d6;
+    --gray-1: #788190;
+    --gray-2: #d3d4db;
+    --white: #FFFFFF;
+    --body: #fefefe;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to right top, #070325, #0e0f2f, #15163a, #1e1d46, #272351);}
+
+/* ------------------------------------------------------------ 
+Setup components
+---------------------------------------------------------------*/
+
+/* button */
+.btn {
+    border-radius: 8px;
+}
+
+.btn-primary,
+.btn-outline-secondary {
+    padding: 12px 20px;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+}
+
+.btn-outline-secondary {
+    border: 1px solid var(--gray-2);
+    color: var(#FFFFFF);
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--gray-2);
+    border: 1px solid var(--gray-2);
+    color: var(#FFFFFF);
+}
+
+.btn-outline-secondary:focus {
+    background-color: var(--gray-2);
+    border: 1px solid var(--gray-2);
+    color: var(#FFFFFF);
+}
+
+
+
+/* ------------------------------------------------------------ 
+Navbar
+---------------------------------------------------------------*/
+.navbar .btn-outline-secondary {
+    border: 1px solid var(#FFFFFF);
+    color: #ebebeb;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 10px 16px;
+}
+
+.navbar {
+    padding: 32px 0;
+}
+
+.nav-link {
+    margin-left: 41px;
+    font-size: 16px;
+    color: #ebebeb;
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: medium;
+    color: #ebebeb;
+}
+
+/* ------------------------------------------------------------ 
+Hero setion
+---------------------------------------------------------------*/
+section.hero {
+    padding: 100px 0;
+}
+
+section.hero .text {
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 55px;
+    letter-spacing: 2px;
+}
+
+.buttons {
+    padding-top: 69px;
+}
+
+.buttons .btn {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+
+/* ------------------------------------------------------------ 
+Setup setion
+---------------------------------------------------------------*/
+section.setup {
+    padding: 50px 0;
+}
+
+section.setup .text-header h2 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 48px;
+    color: #ebebeb;
+}
+
+section.setup .text-header p {
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 28px;
+    color:#ebebeb;
+    padding: 37px 0;
+}
+
+section.setup .icons {
+    padding: 27px 0;
+}
+
+section.setup h3 {
+    font-weight: 200;
+    font-size: 28px;
+    line-height: 14px;
+    color: #ebebeb;
+    padding-bottom: 0px;
+}
+
+section.setup .desc p {
+    font-weight: 100;
+    font-size: 13px;
+    line-height: 22px;
+    color:#ebebeb;
+    max-width: 284px;
+    margin: 0 auto;
+}
+
+/* ------------------------------------------------------------ 
+Information setion
+---------------------------------------------------------------*/
+section.information .text-information {
+    padding: 134px 0;
+}
+
+section.information h5 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 48px;
+    color: #ebebeb;
+}
+
+section.information p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    color: var(--gray-1);
+    padding-top: 20px;
+}
+
+section.information .info-1 {
+    padding: 183px 0;
+}
+
+/* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 32rem;
+  }
+  
+
+/* ------------------------------------------------------------ 
+Contact setion
+---------------------------------------------------------------*/
+h2 {
+    font-weight: 500;
+    font-size: 47px;
+    line-height: 45px;
+    color: #FFFFFF;
+}
+p { 
+    font-weight: 200;
+    font-size: 27px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+label{ 
+    font-size: 27px;
+    color: #FFFFFF
+}
+/* ------------------------------------------------------------ 
+Footer setion
+---------------------------------------------------------------*/
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: transparent;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+
+/* ------------------------------------------------------------ 
+Responsive section
+---------------------------------------------------------------*/
+@media (max-width: 576px) {
+
+    section.photo,
+    section.setup,
+    section.information {
+        text-align: center;
+    }
+
+    /* ------------------------------------------------------------ 
+    Navbar
+    ---------------------------------------------------------------*/
+    .navbar {
+        padding: 20px 0;
+    }
+
+    .nav-link {
+        margin-left: 0;
+    }
+
+    /* ------------------------------------------------------------ 
+    Hero setion
+    ---------------------------------------------------------------*/
+    section.photo img {
+        padding-top: 2.5rem;
+    }
+
+    section.photo .text {
+        font-weight: 800;
+        font-size: 38px;
+        line-height: 53px;
+    }
+
+    .buttons .btn {
+        display: block;
+        margin: 1rem 0;
+    }
+
+    .buttons .ms-3 {
+        margin-left: 0 !important;
+    }
+
+    /* ------------------------------------------------------------ 
+    Setup setion
+    ---------------------------------------------------------------*/
+    section.setup {
+        padding: 50px 0;
+    }
+  /* ------------------------------------------------------------ 
+    footer section
+    ---------------------------------------------------------------*/
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    
+}    
